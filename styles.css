@@ -62,3 +62,8 @@ h1,h2,h3{margin-top:0}h1,h2{font-family:var(--serif);font-weight:400;line-height
 .carousel-arrow:focus-visible,.carousel-pause:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(max-width:600px){.member-voices{padding:26px 18px;margin-top:40px}.member-carousel{min-height:270px}.member-controls{gap:10px}}
 @media(prefers-reduced-motion:reduce){.member-slide{transition:none}}
+
+/* Original Inkwell branding and Liz Heflin portrait */
+.brand-logo{width:48px;height:48px;object-fit:contain;border-radius:50%;display:block;background:#f7f2e8}
+.founder-photo{width:100%;aspect-ratio:4/5;display:block;object-fit:cover;object-position:center 28%;border-radius:30px;border:1px solid var(--line);background:var(--paper-deep)}
+@media(max-width:600px){.brand-logo{width:42px;height:42px}}
