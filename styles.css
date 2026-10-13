@@ -110,12 +110,13 @@ h1,h2,h3{margin-top:0}h1,h2{font-family:var(--serif);font-weight:400;line-height
 
 /* Liz intro video */
 .liz-video-block{
-  margin-top:72px;
+  width:min(960px,calc(100% - 40px));
+  margin:72px auto 0;
   padding-top:54px;
   border-top:1px solid var(--line);
   display:grid;
-  grid-template-columns:.7fr 1.3fr;
-  gap:50px;
+  grid-template-columns:.72fr 1.28fr;
+  gap:42px;
   align-items:center;
 }
 .liz-video-copy h3{
@@ -148,9 +149,12 @@ h1,h2,h3{margin-top:0}h1,h2{font-family:var(--serif);font-weight:400;line-height
 }
 @media(max-width:900px){
   .liz-video-block{
+    width:min(760px,calc(100% - 40px));
     grid-template-columns:1fr;
     gap:28px;
-    margin-top:56px;
+    margin:56px auto 0;
     padding-top:42px;
   }
 }
+
+@media(max-width:600px){.liz-video-block{width:calc(100% - 28px);}}
