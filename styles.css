@@ -196,3 +196,116 @@ h1,h2,h3{margin-top:0}h1,h2{font-family:var(--serif);font-weight:400;line-height
   .hero{padding-bottom:16px}
   .video-intro-section{padding-bottom:24px}
 }
+
+
+/* Freelance writing resources page */
+.resource-page-hero{
+  padding:88px 0 76px;
+  background:var(--white);
+}
+.resource-hero-inner{
+  max-width:900px;
+  text-align:center;
+}
+.resource-page-hero h1{
+  font-size:clamp(54px,7vw,92px);
+  margin-bottom:24px;
+}
+.resource-hero-question{
+  max-width:760px;
+  margin:0 auto;
+  font-family:var(--serif);
+  font-size:clamp(25px,3vw,36px);
+  line-height:1.25;
+}
+.resource-hero-answer{
+  margin:16px auto 0;
+  color:var(--muted);
+  font-size:18px;
+}
+.resource-list-section{padding-top:74px}
+.resource-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.resource-card{
+  min-height:330px;
+  padding:34px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--white);
+  display:flex;
+  flex-direction:column;
+}
+.resource-card-featured{
+  grid-column:1 / -1;
+  min-height:0;
+  background:var(--dark);
+  color:white;
+  border-color:var(--dark);
+}
+.resource-card-topline{
+  min-height:28px;
+  margin-bottom:34px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.resource-number{
+  font-size:12px;
+  letter-spacing:.14em;
+  color:var(--accent);
+  font-weight:700;
+}
+.resource-card-featured .resource-number{color:#d7ae9f}
+.resource-tag{
+  padding:6px 11px;
+  border-radius:999px;
+  background:rgba(255,255,255,.11);
+  color:#f3dfd6;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.resource-card h2{
+  font-size:clamp(31px,3.2vw,44px);
+  margin-bottom:18px;
+}
+.resource-card p{
+  margin:0 0 28px;
+  color:var(--muted);
+  font-size:16px;
+}
+.resource-card-featured p{color:#d0c8bf;max-width:800px}
+.resource-link{
+  margin-top:auto;
+  width:max-content;
+  max-width:100%;
+  color:var(--ink);
+  text-decoration:none;
+  font-weight:700;
+  border-bottom:1px solid currentColor;
+  padding-bottom:3px;
+}
+.resource-card-featured .resource-link{color:white}
+.resource-link span{
+  display:inline-block;
+  margin-left:5px;
+  transition:transform .2s ease;
+}
+.resource-link:hover span{transform:translateX(4px)}
+@media(max-width:800px){
+  .resource-page-hero{padding:70px 0 58px}
+  .resource-grid{grid-template-columns:1fr}
+  .resource-card-featured{grid-column:auto}
+}
+@media(max-width:600px){
+  .resource-page-hero{padding:54px 0 48px}
+  .resource-page-hero h1{font-size:49px}
+  .resource-card{min-height:0;padding:26px}
+  .resource-card-topline{margin-bottom:24px}
+  .resource-list-section{padding-top:52px}
+}
